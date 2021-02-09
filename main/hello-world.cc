@@ -2,18 +2,22 @@
 #include <string>
 #include <iostream>
 
-std::string get_greet(const std::string& who) {
+std::string get_greet(const std::string &who)
+{
   return "Hello " + who;
 }
 
-void print_localtime() {
+void print_localtime()
+{
   std::time_t result = std::time(nullptr);
   std::cout << std::asctime(std::localtime(&result));
 }
 
-int main(int argc, char** argv) {
+int main(int argc, char **argv)
+{
   std::string who = "world";
-  if (argc > 1) {
+  if (argc > 1)
+  {
     who = argv[1];
   }
   std::cout << get_greet(who) << std::endl;
