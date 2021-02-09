@@ -9,3 +9,8 @@ cc_binary(
     name = "cpp11",
     srcs = ["cpp11.cpp"],
 )
+
+cc_binary(
+    name = "working",
+    srcs = ["working.cpp"],
+)

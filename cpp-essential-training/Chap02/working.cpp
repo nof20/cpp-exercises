@@ -4,6 +4,8 @@ using namespace std;
 
 int main()
 {
-    puts("Hello, World!");
+    int x = 42;
+    int *y = &x;
+    printf("Hello, %d\n", *y);
     return 0;
 }
