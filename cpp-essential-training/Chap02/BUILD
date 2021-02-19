@@ -14,3 +14,25 @@ cc_binary(
     name = "working",
     srcs = ["working.cpp"],
 )
+
+cc_binary(
+    name = "switch",
+    srcs = ["switch.cpp"],
+)
+
+cc_binary(
+    name = "while",
+    srcs = ["while.cpp"],
+)
+
+cc_binary(
+    name = "for_static",
+    srcs = ["for.cpp"],
+    linkstatic = True,
+)
+
+cc_binary(
+    name = "for_dyn",
+    srcs = ["for.cpp"],
+    linkstatic = False,
+)
